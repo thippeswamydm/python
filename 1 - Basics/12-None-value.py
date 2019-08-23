@@ -1,0 +1,2 @@
+spam = None
+spam == None
