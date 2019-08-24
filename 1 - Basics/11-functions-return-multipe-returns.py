@@ -9,17 +9,28 @@
 # Values can be destructured and assigned to multiple variables (Multiple return values)
 #     The return values are of specific types as returned and not a tuple in this case
 
+
 def hello(name):
-  print('Howdy! ' + name)
-  return name
+    print('Howdy! ' + name)
+    return name
+
+
 sing = hello('Testing Single Return')
 print(sing)
 
 # Multiple return from function
+
+
 def helloMultiple(name):
-  print('Howdy! ' + name)
-  return 'name', name
+    print('Howdy! ' + name)
+    return 'name', name
+
+
+# Capture multiple returns as a tuple
 mul = helloMultiple('Testing Multiple returns')
 print(mul)
-var1, var2 = helloMultiple('Testing Multiple returns captured in multiple values')
-print(var1, var2) 
+
+# Capture multiple returns in different variables using destructuring
+var1, var2 = helloMultiple(
+    'Testing Multiple returns captured in multiple values')
+print(var1, var2)

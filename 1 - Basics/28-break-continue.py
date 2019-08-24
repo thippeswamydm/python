@@ -1,11 +1,11 @@
 # Describes usage of 'continue' and 'break' keys
 # 'continue' key skips execution of block below it and continues to next
 #       logical step after the continue statement
-# 'break' key will break out of the loop completely
+# 'break' key will break out of the loop completely; without further iteration
 
 for i in range(0, 6, 1):
     if i == 3:
-        # Will skip execution of following codes of this iteration 
+        # Will skip execution of following codes of this iteration
         # and continue to next iteration
         break
     print('Will print two times using number of increments in the last ' + str(i))

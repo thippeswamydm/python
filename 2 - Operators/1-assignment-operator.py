@@ -1,4 +1,7 @@
 # Describes the usage of assignment function using '='
+# Any value can be assigned
+# The variables dont need to know the types and they are
+#       inferred/interpreted during runtime
 
 name = "string"
 integer = 1

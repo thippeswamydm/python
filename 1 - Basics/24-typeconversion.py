@@ -1,6 +1,7 @@
 # Describes typeconversion methods available in python
 # These function can also be used to declare specific types
-# Other functions also exist like list(), dict(), tuple(), set(), frozenset(), etc
+# Other functions also exist like
+#       list(), dict(), tuple(), set(), frozenset(), etc
 # repr() function and str() function both provide the string representation of variable value
 # As per documetation repr() provides more precise representation than str()
 

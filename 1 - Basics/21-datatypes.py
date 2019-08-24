@@ -23,28 +23,28 @@ age = 10
 # print(long(ages))
 
 ages = 10.54
-# Floats may also be in scientific notation, 
+# Floats may also be in scientific notation,
 # with E or e indicating the power of 10 (2.5e2 = 2.5 x 10power2 = 250).
 
 agess = 10.56j
 
 # INBUILT TYPES
-list = [1,2,3,4,5,6]
+list = [1, 2, 3, 4, 5, 6]
 tuples = ("w", "e", "t", "y")
-sets = set([1,2,3,4,5,6])
-fsets = frozenset([1,2,3,4,5,6])
+sets = set([1, 2, 3, 4, 5, 6])
+fsets = frozenset([1, 2, 3, 4, 5, 6])
 
 # DATA TYPES
-arrys = arr.array('d', [1,2,3,4,5,6])
+arrys = arr.array('d', [1, 2, 3, 4, 5, 6])
 
 # http://deeplearning.net/software/theano/tutorial/python-memory-management.html
 # Long was explained as Complex
 #  It was not complex!! but long
 # Complex numbers representation is for "Complex numbers"
-# Complex numbers follow a + bJ, 
-# ** Both a and b are floats 
-# and J (or j) represents the square root of -1 (which is an imaginary number). 
-# The real part of the number is a, and the imaginary part is b. 
+# Complex numbers follow a + bJ,
+# ** Both a and b are floats
+# and J (or j) represents the square root of -1 (which is an imaginary number).
+# The real part of the number is a, and the imaginary part is b.
 # Complex numbers are not used much in Python programming.
 
 print("\nByte size of each of following:\n")
@@ -58,5 +58,3 @@ print("tuples:", tuples, "bytes", sys.getsizeof(tuples))
 print("sets:", sets, "bytes", sys.getsizeof(sets))
 print("fsets:", fsets, "bytes", sys.getsizeof(fsets))
 print("arrys:", arrys, "bytes", sys.getsizeof(arrys))
-
-

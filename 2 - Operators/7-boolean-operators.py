@@ -8,7 +8,7 @@
 name = "test"
 
 # Different usages of 'not' key
-# 'not' key is a checker that checks for inverse of result 
+# 'not' key is a checker that checks for inverse of result
 #       of condition or boolean representation of a variable/value
 # 'not' key returns a boolean value
 
