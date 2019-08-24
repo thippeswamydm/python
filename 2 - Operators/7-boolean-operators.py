@@ -25,8 +25,8 @@ if (type(name) is str):
 if (isinstance(name, str) and (not name)):
     print(name, 2)
 
-# 'or' key will allow getting into the block only if both conditions return True
-# 'or' key has precendence for Falsy value
+# 'and' key will allow getting into the block only if both conditions return True
+# 'and' key has precendence for Falsy value
 if (isinstance(name, str) and (not name == 'test')):
     print(name, 2)
 
