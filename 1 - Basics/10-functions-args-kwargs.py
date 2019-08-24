@@ -36,7 +36,7 @@ def printKeyWordArgs(**kwargs):
 
 printKeyWordArgs(a=10, b=20)
 
-# Can pass both *args and ** kwargs together
+# Can pass both *args and **kwargs together
 # *args always take precedence in function definition
 # Try inverting it or mixing up arguments and keyword arguments in the function
 #       to see the behaviour
@@ -44,8 +44,22 @@ def fncArgsKwargs(*args, **kwargs):
         print('ARGS: {} and KWARGS: {}'.format(args, kwargs))
 
 fncArgsKwargs(1,2,3, a=1, b=2, c=3)
+
+# Following will throw ERROR
 # fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
+
+#   File "10-functions-args-kwargs.py", line 48
+#     fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
+#                       ^
+# SyntaxError: positional argument follows keyword argument
+
+# Following will throw ERROR
 # fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
+
+#   File "10-functions-args-kwargs.py", line 56
+#     fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
+#                       ^
+# SyntaxError: positional argument follows keyword argument
 
 # Try running the inverse
 # def fncArgsKwargsInverse(**kwargs,*args):
