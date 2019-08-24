@@ -14,13 +14,14 @@
 def hello(name):
     print('Hello ' + name)
 
-
+# Unnamed simple arguments
 hello('Alice')
 hello('Wonderland')
+# Named arguments refering to specific argument in function definition
+# Referred to as keyword arguments
+hello(name="Named Variable - Alice in Wonderland")
 
 # Arguments can also be caught as a sequence of arguments
-
-
 def printUnnamedArgs(*args):
     print(args)  # Note the missing *
     # printUnnamedArgs(*args)
@@ -32,8 +33,6 @@ def printUnnamedArgs(*args):
 printUnnamedArgs([1, 2, 3], [4, 5, 6])
 
 # Keyword Arguments can also be caught as a sequence of keyword arguments
-
-
 def printKeyWordArgs(**kwargs):
     print(kwargs)  # Note the missing **
     # printKeyWordArgs(**kwargs)
@@ -53,13 +52,11 @@ printKeyWordArgs(a=10, b=20)
 def fncArgsKwargs(*args, **kwargs):
     print('ARGS: {} and KWARGS: {}'.format(args, kwargs))
 
-
 fncArgsKwargs(1, 2, 3, a=1, b=2, c=3)
-
-# Following line of code will throw ERROR
 
 # fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
 
+# Above line of code will throw ERROR
 # ERROR DETAILS -
 
 #   File "10-functions-args-kwargs.py", line 48
@@ -67,10 +64,9 @@ fncArgsKwargs(1, 2, 3, a=1, b=2, c=3)
 #                       ^
 # SyntaxError: positional argument follows keyword argument
 
-# Following line of code will throw ERROR
-
 # fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
 
+# Above line of code will throw ERROR
 # ERROR DETAILS -
 
 #   File "10-functions-args-kwargs.py", line 56
