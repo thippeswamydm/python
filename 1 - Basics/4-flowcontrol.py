@@ -1,3 +1,7 @@
+# Describes usage of if...elif statements without need of else statement
+# Can have any number of elif statements
+# else statement not compulsary
+
 name = 'Dracula'
 age = 4000
 if name == 'Alice':

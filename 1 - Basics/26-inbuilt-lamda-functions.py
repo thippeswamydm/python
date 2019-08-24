@@ -1,3 +1,4 @@
+# Describes some ibuilt lamda functions
 # INBUILT LAMDA FUNCTIONS 
 # https://www.bogotobogo.com/python/python_fncs_map_filter_reduce.php
 # sorted(iterable[, key][, reverse])

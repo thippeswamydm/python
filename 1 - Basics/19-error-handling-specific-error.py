@@ -1,3 +1,8 @@
+# Describe using of Error Handling of code in python
+# except blocks can be named
+# try...except...finally can be used to trigger finally a block irrespective
+#       of whether an error occured or not
+
 def spam(divideBy):
     return 42 / divideBy
 
@@ -8,6 +13,8 @@ try:
     print(spam(1))
 except ZeroDivisionError: # Catch specific error
     print('Error: Invalid argument.')
+finally:
+    print('Finally Triggered.')
 
     # try:
     #    # do something

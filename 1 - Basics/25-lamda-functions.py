@@ -1,3 +1,6 @@
+# Describes creation and usage of lamda functions
+# Lamda functions can be simple lamda or nested lamda functions
+
 # LAMBDA FUNCTION
 
 # Python supports the creation of lamda or anonymous functions 

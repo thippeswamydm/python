@@ -1,3 +1,9 @@
+# Describes usage of while (conditions) statement
+# Can have multiple conditions using boolean operators
+# Boolean operators are seperated with 'and' OR 'or' keys
+# 'not' is also a boolean operator checking for 
+# presence or absence of specific value based on python object specifications
+
 name = ''
 age = 0
 while (not name) or (not age) or (age == 0):

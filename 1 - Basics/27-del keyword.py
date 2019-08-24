@@ -1,4 +1,5 @@
-# Deleting a variable
+# Describes deleting a variable using the 'del' key
+# del key works with variables, list/sequence items as well
 
 var = "some string"
 var_a = 23

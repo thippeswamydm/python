@@ -1,3 +1,6 @@
+# Declaring a local variable inside a local scope of a function
+# locallly scoped variables cannot be accessed outside 
+#       the local scope; in this case the function
 def spam():
     eggs = 99
     bacon()

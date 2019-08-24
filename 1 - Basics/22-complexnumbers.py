@@ -1,5 +1,10 @@
 # COMPLEX NUMBERS
 # https://en.m.wikipedia.org/wiki/Complex_number
+# Usage and behaviour in python codes
+# Complex numbers end with a 'j' key in the end of the integer/float
+# complex(real, imag)
+# You can add two complex numbers but there will be representation
+#       when a normal number and complex number is added
 
 cmplx0 = 1.23456789j
 print(0, cmplx0, cmplx0.real, cmplx0.imag)

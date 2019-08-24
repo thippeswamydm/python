@@ -1,3 +1,11 @@
+# Describes usage of for loop 
+# for loop can iterate over sequence or sequence like objects
+# range() is an inbuilt function that returns results over time during iteration
+# range() returned a sequence in py2.x
+# USAGE 
+# for item in iterator:
+#   execution block
+
 for i in range(5):
     print('Will print five times ' + str(i))
 for i in range(2, 6):

@@ -1,3 +1,5 @@
+# Describes scope rules in terms of local and global
+
 def spam():
     global eggs
     eggs = 'spam' # this is the global
@@ -10,4 +12,7 @@ def ham():
 
 eggs = 42 # this is the global
 spam()
-print(eggs)
+print(eggs) # prints spam since is global
+bacon()
+print(eggs) 
+# prints spam since bacon implements local variable and doesnt effect eggs variable

@@ -1,3 +1,12 @@
+# Describes usage of if...elif...else statement
+# USAGE
+# if (conditions):
+#   execution block
+# elif (conditions):
+#   execution block
+# else:
+#   execution block
+
 name = input()
 password = input()
 if name == 'Mary':

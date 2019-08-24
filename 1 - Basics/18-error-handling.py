@@ -1,3 +1,8 @@
+# Describe using of Error Handling of code in python
+# try...except is used for error handling
+# except can use a named error
+# except without name will handle and execute if any error occurs
+
 def spam(divideBy):
     try:
         return 42 / divideBy
