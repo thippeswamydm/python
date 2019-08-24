@@ -28,6 +28,7 @@ def accessDifferenceThree():
 eggs = 42
 accessDifferenceThree()
 
+# ERROR DETAILS
 # Traceback (most recent call last):
 #   File "15-local-global-variable-usage.py", line 29, in <module>
 #     accessDifferenceThree()

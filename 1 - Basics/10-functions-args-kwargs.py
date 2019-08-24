@@ -45,27 +45,33 @@ def fncArgsKwargs(*args, **kwargs):
 
 fncArgsKwargs(1,2,3, a=1, b=2, c=3)
 
-# Following will throw ERROR
+# Following line of code will throw ERROR
+
 # fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
 
+# ERROR DETAILS
 #   File "10-functions-args-kwargs.py", line 48
 #     fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
 #                       ^
 # SyntaxError: positional argument follows keyword argument
 
-# Following will throw ERROR
+# Following line of code will throw ERROR
+
 # fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
 
+# ERROR DETAILS
 #   File "10-functions-args-kwargs.py", line 56
 #     fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
 #                       ^
 # SyntaxError: positional argument follows keyword argument
 
-# Try running the inverse
+# Try running the inverse definition below
+
 # def fncArgsKwargsInverse(**kwargs,*args):
 #         print('ARGS: {} and KWARGS: {}'.format(args, kwargs))
 # fncArgsKwargsInverse(a=1, b=2, c=3, 1,2,3)
 
+# ERROR DETAILS
 # fncArgsKwargsInverse will result in following error
 #   File "10-functions-args-kwargs.py", line 51
 #     def fncArgsKwargsInverse(**kwargs,*args):
