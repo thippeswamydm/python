@@ -4,7 +4,7 @@
 
 def spam():
     global eggs
-    print(eggs) # Complains of "Using variable 'eggs' before assignment"
+    print(eggs) # Linter Complains of "Using variable 'eggs' before assignment" but code works
     eggs = 'spam'
 
 eggs = 'global'
