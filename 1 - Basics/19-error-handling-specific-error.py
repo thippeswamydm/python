@@ -1,5 +1,8 @@
 # Describe using of Error Handling of code in python
 # except blocks can be named
+# You can have multiple errors handled and executing the same except codes
+#       Example
+#       except (Err1, Err2, Err3):
 # try...except...finally can be used to trigger finally a block irrespective
 #       of whether an error occured or not
 
