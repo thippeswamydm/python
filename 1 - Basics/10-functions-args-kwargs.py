@@ -14,7 +14,7 @@
 def hello(name):
     print('Hello ' + name)
 
-# IMPLEMENTATION OF INVOCATION SEPARATES ARGUMENTS WITH KEYWORD ARGUMENTS
+# IMPLEMENTATION OF INVOCATION SEPARATES ARGUMENTS FROM KEYWORD ARGUMENTS
 
 # arguments - Unnamed simple arguments
 hello('Alice')
