@@ -1,12 +1,4 @@
-# Difference between a property and attribute - Classes
-# https://stackoverflow.com/questions/7374748/whats-the-difference-between-a-python-property-and-attribute
-
-# Properties - functions
-# https://docs.python.org/3/library/functions.html#property
-# In Python:
-# Attribute is variable
-# Property is variable with getter and setter method
-# Method is class function
+# Describes creating of getters and setters in an alternative way
 
 # Internet says attributes and properties are interchangable 
 # and methods are seperate class functions

@@ -1,5 +1,7 @@
+# Describes multiple inheritance of class from multiple classes
 
-class Foo:
+# Declaration of first parent
+class Parent:
     # Will not be accessible in the child class
     __test = None
     def __init__(self, val):
@@ -10,17 +12,19 @@ class Foo:
     def __printValFoo__(self):
         print(self.val)
 
-class Foos:
+# Declaration of second parent
+class ParentTwo:
     def __init__(self, val):
         self.val = val
     def printValFoos(self):
         print(self.val)
 
-# Simple inheritance of Foo class by DerivedFoo
-class DerivedFoo(Foo, Foos):
+# Simple inheritance of Foo class by DerivedChild
+class DerivedChild(Parent, ParentTwo):
     def negateVal(self):
         self.val = -self.val
 
-obj1 = DerivedFoo('test')
+# Instatiating class and accessing methods
+obj1 = DerivedChild('test')
 obj1.printValFoo()
 obj1.printValFoos()

@@ -1,3 +1,5 @@
+# Describes creating an object that behaves like an iterator object
+
 # Backwards iteration of class object
 class Backwards:
     def __init__(self, val):
@@ -11,6 +13,6 @@ class Backwards:
         self.pos = self.pos - 1
         return self.val[self.pos]
 
-# using class iterator
+# using class iterator created
 for item in Backwards('Tester'):
         print(item)

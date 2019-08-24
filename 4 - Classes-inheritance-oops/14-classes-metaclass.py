@@ -1,3 +1,6 @@
+# Describes usage of 
+# metaclass for creating classes instead of default type class
+# type to create class
 
 # 3.3.3.1. Metaclasses
 # https://docs.python.org/3/reference/datamodel.html#metaclasses

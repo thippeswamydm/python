@@ -1,4 +1,12 @@
-# the double __ means it is private
+# Describes how private variables are declared in a class
+
+# Privacy is just a notion and denoted as following:
+# __attribute refers to the fact that attribute is private
+# The double '__' refers that it is private
+# '__method__(self)' refers to the fact that method is private
+# All private references donot stop us from accessing 
+#       the private attriutes, properties, and methods
+
 class Foo:
     __testPrivateVariableConvention = 1
     def __init__(self, val):

@@ -1,3 +1,8 @@
+# Describes 
+# working of instantiator, 
+# passing of values in constructor,
+# using objects as classes
+
 # using classes as objects
 class Foo:
     def __init__(self, val):
@@ -11,5 +16,5 @@ def printVal(self):
 
 # Assigning function to class as an object
 Foo.printVal = printVal
+# Access obj1 methods, public attributes and properties
 obj1.printVal()
-

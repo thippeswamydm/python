@@ -1,3 +1,4 @@
+# Describes usage of __init_subclass__ method
 
 # # Variation
 # # https://docs.python.org/3/reference/datamodel.html#implementing-descriptors
