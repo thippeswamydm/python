@@ -19,8 +19,6 @@ sing = hello('Testing Single Return')
 print(sing)
 
 # Multiple return from function
-
-
 def helloMultiple(name):
     print('Howdy! ' + name)
     return 'name', name
