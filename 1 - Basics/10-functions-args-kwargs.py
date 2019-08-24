@@ -14,11 +14,14 @@
 def hello(name):
     print('Hello ' + name)
 
-# Unnamed simple arguments
+# IMPLEMENTATION OF INVOCATION SEPARATES ARGUMENTS WITH KEYWORD ARGUMENTS
+
+# arguments - Unnamed simple arguments
 hello('Alice')
 hello('Wonderland')
+
+# keyword arguments - Named arguments
 # Named arguments refering to specific argument in function definition
-# Referred to as keyword arguments
 hello(name="Named Variable - Alice in Wonderland")
 
 # Arguments can also be caught as a sequence of arguments
