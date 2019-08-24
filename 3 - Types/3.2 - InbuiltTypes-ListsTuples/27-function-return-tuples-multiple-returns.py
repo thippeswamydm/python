@@ -1,3 +1,5 @@
+# Describes multiple returns from functions returned as tuple 
+
 def square(x,y):
     return x*x, y*y
 

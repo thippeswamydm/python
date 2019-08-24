@@ -1,8 +1,11 @@
+# Describes how referencing works in lists
+
 spam = [0, 1, 2, 3, 4, 5]
 cheese = spam
 cheese[1] = 'Hello!'
 print(spam)
 # [0, 'Hello!', 2, 3, 4, 5]
+
 print(cheese)
 # [0, 'Hello!', 2, 3, 4, 5]
 
@@ -12,4 +15,4 @@ def eggs(someParameter):
 
 someOtherParam = [1, 2, 3]
 eggs(someOtherParam)
-print(someOtherParam)
+print('someOtherParam',someOtherParam)

@@ -1,11 +1,22 @@
-spam = [2, 5, 3.14, 1, -7]
-spam.sort()
-print(spam)
+# Describes using sort on list based of only integers or only aplhabets
+
+lists = [2, 5, 3.14, 1, -7]
+
+# USAGE
+# Simple sort function on integer list without specifications
+lists.sort()
+print(lists)
+# Results in following
 # [-7, 1, 2, 3.14, 5]
-spam = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
-spam.sort()
-print(spam)
+
+lists = ['ants', 'cats', 'dogs', 'badgers', 'elephants']
+# Simple sort function on alphabet list without specifications
+lists.sort()
+print(lists)
+# RESULT:
 # ['ants', 'badgers', 'cats', 'dogs', 'elephants']
-spam.sort(reverse=True)
-print(spam)
+
+# Simple sort function on alphabet list with reversing specifications
+lists.sort(reverse=True)
+print(lists)
 # ['elephants', 'dogs', 'cats', 'badgers', 'ants']

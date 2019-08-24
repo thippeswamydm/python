@@ -1,3 +1,5 @@
-spam = ['cat', 'dog', 'bat']
-spam.append('moose')
-print(spam)
+# Describes the append method of lists
+
+lists = ['cat', 'dog', 'bat']
+lists.append('moose')
+print(lists)

@@ -9,25 +9,43 @@
 
 
 # Simple list created using [] brackets
-spam = ['cat', 'bat', 'rat', 'elephant']
-print(spam)
-print(spam[1]) # 'bat'
-print(spam[-1]) # 'elephant'
+lists = ['cat', 'bat', 'rat', 'elephant']
+print(lists)
 
+# Referencing items
+print(lists[1]) # 'bat'
+print(lists[-1]) # 'elephant'
+
+# Simple list assignation
 nums = [1,2,3,4,5]
 print(nums)
 
 print(nums[0]) # 1
 print(nums[-1]) # 5
 
-print(spam[1:4]) # [bat', 'rat']
-print(spam[:4]) # ['cat', 'bat', 'rat']
-print(spam[1:]) # [bat', 'rat', 'elephant']
+# Referencing items using range
+print(lists[1:4]) # [bat', 'rat']
+print(lists[:4]) # ['cat', 'bat', 'rat']
 
-listOfLIsts = [['cat', 'bat', 'rat', 'elephant'], [1,2,3,4,5]]
+# Referencing items using range start but without end range 
+# (defaults to last item of list)
+print(lists[1:]) # [bat', 'rat', 'elephant']
 
-print(listOfLIsts[0][1]) # 'bat'
-print(listOfLIsts[1][1]) # 2
+# Referencing items using range start but without end range 
+# (defaults to first item of list)
+print(lists[:2]) # [bat', 'rat', 'elephant']
 
-print(len(spam))
+# Referencing items using range but without start and end range
+# (defaults to first and last item of list)
+print(lists[:]) # [bat', 'rat', 'elephant']
+
+listOfLists = [['cat', 'bat', 'rat', 'elephant'], [1,2,3,4,5]]
+
+# Referencing items of inner list items
+# Second bracket refers to inner list or sequence
+# Range also works in the same way, as for a simple list
+print(listOfLists[0][1]) # 'bat'
+print(listOfLists[1][1]) # 2
+
+print(len(lists))
 print(len(nums))
