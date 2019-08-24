@@ -5,6 +5,9 @@
 #       variable+variable
 # Returns boolean value
 
+# isinstance() is an inbuilt function that checks
+#       if a object is an instance of specific type
+
 # Operation, Meaning
 
 # < - strictly less than
@@ -13,8 +16,6 @@
 # >= - greater than or equal
 # == - equal
 # != not equal
-# is - object identity
-# is not - negated object identity
 
 # Basic class defintion to demostrate usage of operators
 
@@ -34,7 +35,7 @@ tester = nam()
 # if not (name == "test"):
 # if (name != "test"):
 
-if (type(name) is str):
+if (type(name) == 'str'):
     print(name, 1)
 
 if (isinstance(name, str)):
@@ -48,6 +49,3 @@ if ((isinstance(name, str) == True) or (not name == 'test')):
 
 if ((isinstance(name, str) == True) and not (name == 'test')):
     print(name, 2)
-
-if name is not int:
-    print(name, 4)
