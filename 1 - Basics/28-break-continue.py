@@ -7,7 +7,7 @@ for i in range(0, 6, 1):
     if i == 3:
         # Will skip execution of following codes of this iteration
         # and continue to next iteration
-        break
+        continue
     print('Will print two times using number of increments in the last ' + str(i))
 
 for i in range(0, 6, 1):
