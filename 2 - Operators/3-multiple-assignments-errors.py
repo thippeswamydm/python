@@ -1,3 +1,5 @@
+# Describe incorrect usage of multiple assignation which throws error
+
 cat = ['fat', 'orange', 'loud']
 size, color, disposition, name = cat
 # Traceback (most recent call last):

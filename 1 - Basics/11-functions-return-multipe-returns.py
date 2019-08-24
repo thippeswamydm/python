@@ -19,7 +19,7 @@ print(sing)
 def helloMultiple(name):
   print('Howdy! ' + name)
   return 'name', name
-mul = hello('Testing Multiple returns')
+mul = helloMultiple('Testing Multiple returns')
 print(mul)
-var1, var2 = hello('Testing Multiple returns captured in multiple values')
+var1, var2 = helloMultiple('Testing Multiple returns captured in multiple values')
 print(var1, var2) 
