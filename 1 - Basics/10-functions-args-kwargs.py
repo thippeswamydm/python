@@ -5,8 +5,9 @@
 
 # Arguments can be passed to functions in definitions
 # Arguments have to be compulsarily passed if declared in definition
-# Arguments can be passed as named or unnamed arguments
-# When name of argument is specified then it is referred to as keyword arguments
+# Arguments can be passed as named or unnamed arguments during invocation
+# When name of argument is specified with what argument it refers to 
+#       in terms of function declaration then it is referred to as keyword arguments
 # Arguments can be of any type, can also be a function
 
 def hello(name):
