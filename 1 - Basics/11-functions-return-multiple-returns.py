@@ -7,7 +7,9 @@
 
 # Return values can be captured in a variable during invocation (Single or Multiple return values)
 # Values can be destructured and assigned to multiple variables (Multiple return values)
-#     The return values are of specific types as returned and not a tuple in this case
+#       The return values are of specific types as returned and not a tuple in this case
+# The number of items in the destructuring have to be
+#       the same as variables used for assignation
 
 
 def hello(name):
@@ -17,6 +19,7 @@ def hello(name):
 
 sing = hello('Testing Single Return')
 print(sing)
+
 
 # Multiple return from function
 def helloMultiple(name):

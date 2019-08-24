@@ -9,12 +9,14 @@
 # When name of argument is specified with what argument it refers to
 #       in terms of function declaration then it is referred to as keyword arguments
 # Arguments can be of any type, can also be a function
+# default values for arguments can be assigned in definition of function
 
 
 def hello(name):
     print('Hello ' + name)
 
 # IMPLEMENTATION OF INVOCATION SEPARATES ARGUMENTS FROM KEYWORD ARGUMENTS
+
 
 # arguments - Unnamed simple arguments
 hello('Alice')
@@ -23,6 +25,17 @@ hello('Wonderland')
 # keyword arguments - Named arguments
 # Named arguments refering to specific argument in function definition
 hello(name="Named Variable - Alice in Wonderland")
+
+# Assigning default values for arguments in definition of function
+def helloDefaultValue(name="Default Value"):
+    print(name)
+
+
+# Passed value will be used instead of default
+helloDefaultValue("Passed vaue used instead of default value")
+
+# Default value will be used
+helloDefaultValue()
 
 # Arguments can also be caught as a sequence of arguments
 def printUnnamedArgs(*args):
@@ -55,13 +68,13 @@ printKeyWordArgs(a=10, b=20)
 def fncArgsKwargs(*args, **kwargs):
     print('ARGS: {} and KWARGS: {}'.format(args, kwargs))
 
+
 fncArgsKwargs(1, 2, 3, a=1, b=2, c=3)
 
 # fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
 
 # Above line of code will throw ERROR
 # ERROR DETAILS -
-
 #   File "10-functions-args-kwargs.py", line 48
 #     fncArgsKwargs(c=3, 1,2,3, a=1, b=2)
 #                       ^
@@ -71,7 +84,6 @@ fncArgsKwargs(1, 2, 3, a=1, b=2, c=3)
 
 # Above line of code will throw ERROR
 # ERROR DETAILS -
-
 #   File "10-functions-args-kwargs.py", line 56
 #     fncArgsKwargs(c=3, 1,2,b=2, 3, a=1)
 #                       ^
@@ -82,10 +94,11 @@ fncArgsKwargs(1, 2, 3, a=1, b=2, c=3)
 
 # def fncArgsKwargsInverse(**kwargs,*args):
 #         print('ARGS: {} and KWARGS: {}'.format(args, kwargs))
+# 
 # fncArgsKwargsInverse(a=1, b=2, c=3, 1,2,3)
 
+# Above line of code will throw ERROR
 # ERROR DETAILS -
-
 # fncArgsKwargsInverse will result in following error
 #   File "10-functions-args-kwargs.py", line 51
 #     def fncArgsKwargsInverse(**kwargs,*args):

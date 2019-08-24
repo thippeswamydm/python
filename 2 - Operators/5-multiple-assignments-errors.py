@@ -1,5 +1,5 @@
 # Describe incorrect usage of multiple assignation which throws error
-
+# The number of items in the destructuring have to be the same as variables used for assignation
 cat = ['fat', 'orange', 'loud']
 size, color, disposition, name = cat
 
