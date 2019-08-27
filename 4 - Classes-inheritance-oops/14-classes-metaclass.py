@@ -22,15 +22,21 @@
 # >>> MyClass
 # <class '__main__.MyClass'>
 
+# Creating a empty metaclass that extends type
 class Meta(type):
     pass
 
+# Adding the metaclass with Meta class
 class MyClass(metaclass=Meta):
     def test(self):
         print("My test")
 
+# Extending the MyClass for MySubClass
 class MySubclass(MyClass):
     def tester(self):
         print("My tester")
 
+# Instantiating the class MySubclass
 obj = MySubclass()
+
+

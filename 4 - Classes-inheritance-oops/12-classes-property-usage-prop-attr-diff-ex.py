@@ -2,6 +2,7 @@
 
 # Internet says attributes and properties are interchangable 
 # and methods are seperate class functions
+
 class C:
     def __init__(self):
         self._x = None
