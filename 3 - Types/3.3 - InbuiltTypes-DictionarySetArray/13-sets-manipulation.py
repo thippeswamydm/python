@@ -1,4 +1,8 @@
-set1 = set() 
+# Describes the assigning, working, and method usages of sets
+# Frozenset will not manipulator functions since they are immutable
+
+# Using the set function to create a blank set
+set1 = set()
 print("Intial blank Set: ") 
 print(set1)
 

@@ -1,4 +1,11 @@
+# Describes the assigning, working, and method usages of sets
+
+# Importing Array module (all exports)
 from array import *
+
+# Alternate import statement
+# import array
+# import array as array
 
 # arrame = array(typecode, [Initializers])
 arr = array('L',[100000000,2,3,4])

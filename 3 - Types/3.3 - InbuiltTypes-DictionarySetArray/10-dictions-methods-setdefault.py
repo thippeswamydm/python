@@ -1,11 +1,21 @@
-spam = {'name': 'Pooka', 'age': 5}
-if 'color' not in spam:
-    spam['color'] = 'black'
+# Describes the assigning, working, and method usages of dictionaries
 
-spam = {'name': 'Pooka', 'age': 5}
-spam.setdefault('color', 'black')
-# 'black'
-print(spam)
-# {'color': 'black', 'age': 5, 'name': 'Pooka'}
-spam.setdefault('color', 'white')
-# 'black'
+obj = {'name': 'Ganesh', 'age': 5}
+
+# Add a key value pair
+if 'color' not in obj:
+    obj['color'] = 'light-brown'
+
+obj = {'name': 'Ganesh', 'age': 5}
+
+# Using setdefault function
+obj.setdefault('color', 'light-brown')
+# 'light-brown'
+
+print(obj)
+# {'color': 'light-brown', 'age': 5, 'name': 'Ganesh'}
+
+obj.setdefault('color', 'white')
+# 'light-brown'
+
+print(obj)

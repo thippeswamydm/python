@@ -1,4 +1,7 @@
-# Set is an unordered collection of data type 
+# Describes the assigning, working, and method usages of sets
+# Frozenset will not manipulator functions since they are immutable
+
+# Set is an unordered collection of data type
 # that is iterable, mutable and has no duplicate elements
 
 # Frozen sets in Python are "immutable" objects that only support methods 
