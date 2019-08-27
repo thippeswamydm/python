@@ -4,8 +4,8 @@
 #       since variables HAVE to be declared and assigned a value
 #       during definition in python
 
-spam = None
-print(spam)  # Returns None
-print(type(spam))  # Returns NoneType
+obj = None
+print(obj)  # Returns None
+print(type(obj))  # Returns NoneType
 
-print(spam == None)
+print(obj == None)

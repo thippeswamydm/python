@@ -8,7 +8,7 @@
 # You can have any number of 'except' blocks
 
 
-def spam(divideBy):
+def obj(divideBy):
     try:
         return 42 / divideBy
     except ZeroDivisionError:
@@ -17,8 +17,8 @@ def spam(divideBy):
         print('Error: Invalid argument.')
 
 
-print(spam(2))
-print(spam(12))
+print(obj(2))
+print(obj(12))
 # Will throw ZeroDivisionError and will be captured triggering respective except block
-print(spam(0))
-print(spam(1))
+print(obj(0))
+print(obj(1))

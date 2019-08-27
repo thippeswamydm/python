@@ -8,15 +8,15 @@
 #       of whether an error occured or not
 
 
-def spam(divideBy):
+def obj(divideBy):
     return 42 / divideBy
 
 
 try:
-    print(spam(2))
-    print(spam(12))
-    print(spam(0))
-    print(spam(1))
+    print(obj(2))
+    print(obj(12))
+    print(obj(0))
+    print(obj(1))
 except ZeroDivisionError:  # Catch specific error
     print('Error: Invalid argument.')
 finally:

@@ -4,13 +4,13 @@
 
 
 def spam():
-    global eggs
-    print(eggs)
-    # Linter Complains of "Using variable 'eggs' before assignment"
+    global var
+    print(var)
+    # Linter Complains of "Using variable 'var' before assignment"
     # but code works
-    eggs = 'spam'
+    var = 'spam'
 
 
-eggs = 'global'
+var = 'global'
 spam()
-print(eggs)
+print(var)

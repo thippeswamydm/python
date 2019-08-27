@@ -6,7 +6,7 @@
 # Implementation of local scope of 'eggs'
 
 
-def spam():
+def obj():
     eggs = 99
     bacon()
     print(eggs)
@@ -19,7 +19,7 @@ def bacon():
     eggs = 0
 
 
-spam()
+obj()
 
 
 def name():

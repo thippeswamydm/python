@@ -9,38 +9,38 @@
 
 
 def accessGlobalVariableAsArgument():
-    print(eggs)  # global scoped access of eggs since no assignation in function
+    print(var)  # global scoped access of var since no assignation in function
 
 
-eggs = 42
+var = 42
 accessGlobalVariableAsArgument()
-print(eggs)
+print(var)
 
 
-def passGlobalVariableAsArgument(eggs):
-    print(eggs)  # global scoped access of eggs since no assignation in function
+def passGlobalVariableAsArgument(var):
+    print(var)  # global scoped access of var since no assignation in function
 
 
-eggs = 42
-passGlobalVariableAsArgument(eggs)
-print(eggs)
+var = 42
+passGlobalVariableAsArgument(var)
+print(var)
 
 
 def accessDifferenceOne():
-    eggs = 43  # Now locally scoped
-    print(eggs)
+    var = 43  # Now locally scoped
+    print(var)
 
 
-eggs = 42
+var = 42
 accessDifferenceOne()
-print(eggs)
+print(var)
 
 
-def accessDifferenceTwo(eggs):
-    eggs = 43  # Now locally scoped and not global
-    print(eggs)
+def accessDifferenceTwo(var):
+    var = 43  # Now locally scoped and not global
+    print(var)
 
 
-eggs = 42
-accessDifferenceTwo(eggs)
-print(eggs)
+var = 42
+accessDifferenceTwo(var)
+print(var)
