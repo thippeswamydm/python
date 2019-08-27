@@ -9,10 +9,14 @@
 
 # Internet says attributes and properties are interchangable 
 # and methods are seperate class functions
+
+# Declaring class A
 class A(object):
+    # Defining a _x attr
     _x = 0
     '''A._x is an attribute'''
 
+    # Adding a getter for property x that returns _x
     @property
     def x(self):
         '''
@@ -21,6 +25,7 @@ class A(object):
         '''
         return self._x
 
+    # Adding a setter that assigns values for _x
     @x.setter
     def x(self, value):
         """
@@ -31,7 +36,10 @@ class A(object):
             raise ValueError("Must be >= 0")
         self._x = value
 
+# Instantiating Class A
 a = A()
+
+# Checking functionality for a.x (should be working on or manipulating a._x)
 a._x = -1
 a.x = -1
 # Correct one
