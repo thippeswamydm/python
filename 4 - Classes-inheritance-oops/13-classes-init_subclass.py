@@ -78,7 +78,11 @@ class Vehicle(EngineType, WheelType, eType="Test", wType="Tester"):
 
     # Defining the __init__ method
     def __init__(self, ppart, eType, wType):
-        # When you have one Parent or Base class
+        # Instantiate parent - does first parent class instantiation
+        # Or use specific Base call instantiators as below
+        # super()
+
+        # When you have one/first Parent or Base class
         # super().__init__(eType)
 
         # When you have multiple Base or Parent class, pass arguments
