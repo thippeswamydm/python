@@ -20,10 +20,13 @@ class UpperAttrMetaclass(type):
 
     # Defining __init__ method behaviour
     # Adding a method in the implementation to the class object
+    # Implementation gets passed with clsname, bases, dct automatically
+    # Implementation different from default
     def __init__(cls, clsname, bases, dct):
         print("Printing clsname, bases, dct from UpperAttrMetaclass:__init__", clsname, bases, dct)
         print("Initialising my init from UpperAttrMetaclass:__init__", cls.__hash__(cls))
         setattr(cls, 'common_attribute_def', cls.common_attribute_def)
+        # init passes an argument of cls/self
         return super(UpperAttrMetaclass, cls).__init__(cls)
 
     # Defining __call__ method behaviour
@@ -34,12 +37,15 @@ class UpperAttrMetaclass(type):
         setattr(cls, "someValue", cls.someValue)
         setattr(cls, "__privateValue", cls.__privateValue)
         print('__dict__ from UpperAttrMetaclass:__int__', cls.__dict__)
+        # Call does not pass a argument
         return super(UpperAttrMetaclass, cls).__call__()
 
     # Defining a __new__ implementation behaviour for the metaclass
     # Converting all the attributes defined in the class to uppercase
     # Converts only attributes and methods to uppercase defined inside the class extending the metaclass
     # Try adding the common_attribute_def and see the behaviour - does not get added
+    # Implementation gets passed with clsname, bases, dct automatically
+    # Implementation different from default
     def __new__(cls, clsname, bases, dct):
         uppercase_attr = {}
         print('Printing bases from type base class: UpperAttrMetaclass:__new__', bases)
@@ -51,6 +57,7 @@ class UpperAttrMetaclass(type):
                 uppercase_attr[name] = val
         # Following code does not add the attribute to the class derived from the metaclass
         # setattr(cls, 'common_attribute_def', cls.common_attribute_def)
+        # __new__ passes arguments of cls/self, clsname, bases, dict
         return super(UpperAttrMetaclass, cls).__new__(cls, clsname, bases, uppercase_attr)
 
 # Creating base class for a sample bases in meta class defs
@@ -87,3 +94,4 @@ obj.second_attribute_def()
 # Checks for availability of properties
 print(obj.someValue)
 print(obj.__privateValue)
+print(obj.__dict__)

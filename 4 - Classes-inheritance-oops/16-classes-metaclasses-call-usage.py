@@ -18,6 +18,7 @@ class ModelBase(type):
         print('dict', dct)
         print('cls.__dict__', cls.__dict__)
         # Returning the class as is - No changes
+        # init passes an argument of cls or self
         return super(ModelBase, cls).__init__(cls)
 
     def __call__(self, *args, **kwargs):
@@ -25,6 +26,7 @@ class ModelBase(type):
         setattr(self, "hello", self.hello)
         setattr(self, "sayHello", self.hello)
         # Returning the modified class with two new methods
+        # Call does not pass a argument
         return super(ModelBase, self).__call__()
 
 class MyTest(metaclass=ModelBase):
