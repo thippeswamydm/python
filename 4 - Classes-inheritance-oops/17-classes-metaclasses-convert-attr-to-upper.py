@@ -87,4 +87,3 @@ obj.second_attribute_def()
 # Checks for availability of properties
 print(obj.someValue)
 print(obj.__privateValue)
-print(obj.__dict__)
