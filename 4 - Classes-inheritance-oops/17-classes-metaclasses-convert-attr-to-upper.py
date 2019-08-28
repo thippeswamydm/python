@@ -55,6 +55,7 @@ class UpperAttrMetaclass(type):
                 uppercase_attr[name.upper()] = val
             else:
                 uppercase_attr[name] = val
+        # Try adding attrs/method like this and see behaviour
         # setattr(cls, 'common_attribute_def', cls.common_attribute_def)
 
         # __new__ passes arguments of cls/self, clsname, bases, dict
