@@ -21,7 +21,6 @@ class C:
     # Defining a del function for _x
     def delx(self):
         del self._x
-
     x = property(getx, setx, delx, "I'm the 'x' property.")
 
 # If c is an instance of C, 

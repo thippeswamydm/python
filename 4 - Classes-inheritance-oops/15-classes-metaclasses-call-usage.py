@@ -36,5 +36,10 @@ class MyTest(metaclass=ModelBase):
         # an common attr from __call__ and not __new__
         pass
 
+        # Creating a method testhello
+        # def testhello(self):
+        #     self.sayHello()
 obj = MyTest()
 obj.sayHello()
+# This will get overridden since we are creating a new object inside __call__ of metaclass
+# obj.testhello()

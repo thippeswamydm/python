@@ -21,17 +21,19 @@ class UpperAttrMetaclass(type):
     # Defining __init__ method behaviour
     # Adding a method in the implementation to the class object
     def __init__(cls, clsname, bases, dct):
-        print("Initialising my init from __init__", cls.__hash__(cls))
+        print("Printing clsname, bases, dct from UpperAttrMetaclass:__init__", clsname, bases, dct)
+        print("Initialising my init from UpperAttrMetaclass:__init__", cls.__hash__(cls))
         setattr(cls, 'common_attribute_def', cls.common_attribute_def)
         return super(UpperAttrMetaclass, cls).__init__(cls)
 
     # Defining __call__ method behaviour
     # Adding a method and two attributes in the implementation to the class object
     def __call__(cls, *args, **kwargs):
-        print('args, kwargs from __call__', args, kwargs)
+        print('args, kwargs from UpperAttrMetaclass.__call__', args, kwargs)
         setattr(cls, "second_attribute_def", cls.second_attribute_def)
         setattr(cls, "someValue", cls.someValue)
         setattr(cls, "__privateValue", cls.__privateValue)
+        print('__dict__ from UpperAttrMetaclass:__int__', cls.__dict__)
         return super(UpperAttrMetaclass, cls).__call__()
 
     # Defining a __new__ implementation behaviour for the metaclass
@@ -40,7 +42,7 @@ class UpperAttrMetaclass(type):
     # Try adding the common_attribute_def and see the behaviour - does not get added
     def __new__(cls, clsname, bases, dct):
         uppercase_attr = {}
-        print('Printing bases from type base class: __new__', bases)
+        print('Printing bases from type base class: UpperAttrMetaclass:__new__', bases)
         # Convert attributes to uppercase (basically the dict keys)
         for name, val in dct.items():
             if not name.startswith('__'):
@@ -51,13 +53,11 @@ class UpperAttrMetaclass(type):
         # setattr(cls, 'common_attribute_def', cls.common_attribute_def)
         return super(UpperAttrMetaclass, cls).__new__(cls, clsname, bases, uppercase_attr)
 
-
 # Creating base class for a sample bases in meta class defs
 class BaseClassTwo:
     # Defining a mybasetwo method
     def mybasetwo(self):
         print("Extended: In mybasetwo function from BaseClassTwo")
-
 
 # Creating base class for a sample bases in meta class defs
 class BaseClass:
@@ -65,9 +65,8 @@ class BaseClass:
     def mybase(self):
         print("Extended: In mybase function from BaseClass")
 
-
 # Creating MyNewsClass extending two base classes and using a meta class defined above
-class MyNewsClass(BaseClass, BaseClassTwo, metaclass=UpperAttrMetaclass):
+class MyNewsClass(BaseClass, BaseClassTwo, metaclass = UpperAttrMetaclass):
     # Defining the __init__ method
     def __int__(self):
         super()
@@ -75,7 +74,6 @@ class MyNewsClass(BaseClass, BaseClassTwo, metaclass=UpperAttrMetaclass):
     # defining a method MyNewClassDef
     def MyNewClassDef(self):
         print("Usage: small caps attributes due to metaclass new_fn from MyNewsClass")
-
 
 # Instantiation of class using the metaclass UpperAttrMetaclass which extends two base classes
 obj = MyNewsClass()
@@ -89,3 +87,4 @@ obj.second_attribute_def()
 # Checks for availability of properties
 print(obj.someValue)
 print(obj.__privateValue)
+print(obj.__dict__)

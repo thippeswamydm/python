@@ -9,7 +9,7 @@ class ModelBase(type):
     # Creating a method to be applied to all classed extending metaclass ModelBase
     def hello(cls):
         print("Test", type(cls))
-
+    # __new__ , __init__ , __call__ , __dict__
     # Overriding implementation of __init__ of type and returning a class
     def __init__(cls, name, bases, dct):
         # Printing arguments
@@ -27,12 +27,11 @@ class ModelBase(type):
         # Returning the modified class with two new methods
         return super(ModelBase, self).__call__()
 
-
 class MyTest(metaclass=ModelBase):
-    # Creating a method testhello
-    def testhello(self):
-        self.sayHello()
-
+        # Creating a method testhello
+        def testhello(self):
+            self.sayHello()
+            print("Printing class details inside of MyTest", type(self))
 
 # Instantiating MyTest class extended using the metaclass ModelBase
 obj = MyTest()

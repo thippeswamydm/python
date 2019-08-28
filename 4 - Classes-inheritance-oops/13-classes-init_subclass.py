@@ -29,9 +29,9 @@ class WheelType:
 
     # Defining the __init_subclass__ taking staically defined argument, keyword arguments
     def __init_subclass__(self, wType, **kwargs):
-            super().__init_subclass__(**kwargs)
-            self.__type = wType
-            print('**kwargs WT',kwargs)
+        super().__init_subclass__(**kwargs)
+        self.__type = wType
+        print('**kwargs WT', kwargs)
 
     # Defining a simple getter for wheel __type
     def get_wheel_type(self):
@@ -40,6 +40,7 @@ class WheelType:
     # Defining a simple setter for wheel __type
     def set_wheel_type(self, prop):
         self.__type = prop
+
 
 # Describing a base class called as EngineType
 class EngineType:
@@ -50,7 +51,7 @@ class EngineType:
     def __init_subclass__(self, eType, **kwargs):
         super().__init_subclass__(**kwargs)
         self.__engineType = eType
-        print('**kwargs ET',kwargs)
+        print('**kwargs ET', kwargs)
 
     # Defining __init__ taking the value of the __engineType
     def __init__(self, val):
@@ -63,6 +64,7 @@ class EngineType:
     # Defining a simple setter for Engine __engineType
     def setEngineType(self, val):
         self.__engineType = val
+
 
 # Defining a Vehicle class that extends EngineType, WheelType (MULTIPLE INHERITANCE)
 # Also adds __init_subclass__ keyword arguments for parents implementing subclass function
@@ -82,7 +84,7 @@ class Vehicle(EngineType, WheelType, eType="Test", wType="Tester"):
         # When you have multiple Base or Parent class, pass arguments
         # EngineType.__init__(self, eType)
         # WheelType.__init__(self, wType)
-        
+
         self.eType = eType
         self.__pendingParts.append(ppart)
 
@@ -104,8 +106,9 @@ class Vehicle(EngineType, WheelType, eType="Test", wType="Tester"):
         self.__otherParts = oParts
         self.__pendingParts = pParts
 
+
 # Instantiation of Vehicle class
-vh = Vehicle("pPart", "Car","Square")
+vh = Vehicle("pPart", "Car", "Square")
 
 # Checking for properties to be available and function
 print(vh.getEngineType())
