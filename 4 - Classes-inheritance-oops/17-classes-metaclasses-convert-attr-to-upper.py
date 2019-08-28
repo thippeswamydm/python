@@ -26,7 +26,7 @@ class UpperAttrMetaclass(type):
         print("Printing clsname, bases, dct from UpperAttrMetaclass:__init__", clsname, bases, dct)
         print("Initialising my init from UpperAttrMetaclass:__init__", cls.__hash__(cls))
         setattr(cls, 'common_attribute_def', cls.common_attribute_def)
-        # init passes an argument of cls/self
+        # init passes an argument of cls/self. Fails with clsname, bases, dct args
         return super(UpperAttrMetaclass, cls).__init__(cls)
 
     # Defining __call__ method behaviour
@@ -48,15 +48,15 @@ class UpperAttrMetaclass(type):
     # Implementation different from default
     def __new__(cls, clsname, bases, dct):
         uppercase_attr = {}
-        print('Printing bases from type base class: UpperAttrMetaclass:__new__', bases)
+        print('Printing clsname, bases, dct from type base class: UpperAttrMetaclass:__new__', clsname, bases, dct)
         # Convert attributes to uppercase (basically the dict keys)
         for name, val in dct.items():
             if not name.startswith('__'):
                 uppercase_attr[name.upper()] = val
             else:
                 uppercase_attr[name] = val
-        # Following code does not add the attribute to the class derived from the metaclass
         # setattr(cls, 'common_attribute_def', cls.common_attribute_def)
+
         # __new__ passes arguments of cls/self, clsname, bases, dict
         return super(UpperAttrMetaclass, cls).__new__(cls, clsname, bases, uppercase_attr)
 
@@ -94,4 +94,5 @@ obj.second_attribute_def()
 # Checks for availability of properties
 print(obj.someValue)
 print(obj.__privateValue)
+# ?
 print(obj.__dict__)
