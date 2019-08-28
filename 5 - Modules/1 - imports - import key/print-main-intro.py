@@ -25,6 +25,7 @@ def inputprinter():
 
 # The following if statement runs if this file is directly executed
 #       and __name__ = "print" is commented
+# Will run since this file will assign default value will then be __main__
 # This following code will not be executed if the file is imported by other files
 if __name__ == '__main__':
     printer()
@@ -35,10 +36,8 @@ if __name__ == '__main__':
 # The following if statement runs if this file is directly executed
 #       and __name__ = "print" is not commented
 # This following code will be executed if the file is imported by other files
-#       and will result in errors.
-#       Hence, keeping the following commented since the file is imported by other file
-
-# if __name__ == 'print':
-#     printer()
-#     inputprinter()
-#     print("Triggered from __name__ == 'print' of print")
+#       and will result in errors
+if __name__ == 'print':
+    printer()
+    inputprinter()
+    print("Triggered from __name__ == 'print' of print")
