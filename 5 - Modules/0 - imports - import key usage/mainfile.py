@@ -1,8 +1,15 @@
 # import statement, variations of import
 # __name__
 
+# |----- /mod -----
+# |                |
+# |                |----- printfile.py
+# |
+# |----- mainfile.py
+
 # USING as a script file (running the file as a script)
 # Considers the script file to be within folder `mod` named `printfile.py`
+# Considers the main file importing the script file to be outside the `mod` folder and in the same level
 
 # When __name__ is not assigned:
 #   default value for __name__ assigned will be __main__
@@ -15,6 +22,7 @@
 # USING the file as a module (running a different file that imports the file specified)
 # Considers the script file to be within folder `mod` named `printfile.py`
 # Considers the main file importing the script file to be outside the `mod` folder and in the same level
+
 
 # When __name__ is not assigned:
 #   default value for module will be generally filename or path.filename

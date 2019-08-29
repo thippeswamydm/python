@@ -15,13 +15,19 @@
 
 # __name__ = "print"
 
+print("First statement")
+
 def printer():
     print('Print Module Called')
+
+print("Second statement")
 
 def inputprinter():
     print('Enter your name:')
     strs = input()
     print(str(strs))
+
+print("Third statement")
 
 # The following if statement runs if this file is directly executed
 #       and __name__ = "print" is commented
@@ -33,6 +39,8 @@ if __name__ == '__main__':
     inputprinter()
     print("Triggered from __name__ == '__main__' of print")
 
+print("Fourth statement")
+
 # The following if statement runs if this file is directly executed
 #       and __name__ = "print" is not commented
 # This following code will be executed if the file is imported by other files
@@ -41,3 +49,5 @@ if __name__ == 'print':
     printer()
     inputprinter()
     print("Triggered from __name__ == 'print' of print")
+
+print("Fifth statement")
