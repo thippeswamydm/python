@@ -42,37 +42,51 @@
 # DIFFERENT FORMS OF USAGES
 
 # WAY ONE
+
 # import mod.filename as pr
 
+
 # WAY TWO
+
 # import mod.filename
 
+
 # WAY THREE
+
 # import sys
 #
 # sys.path.append('./mod/')
 # import filename
 
+
 # WAY FOUR
+
 # import sys
 #
 # sys.path.append('./')
 # import mod.filename
 
+
 # WAY FIVE
+
 # all obj will be available in the global space
 # including __name__. Hence, overridden
 
 # from mod.filename import *
 
+
 # WAY SIX
 # Will only import func and func_two obj
+
 # from mod.filename import func, func_two
+
 
 # Wrong
 # from mod.filename import * as pr
+
 # Wrong
 # from mod import filename
+
 # Wrong
 # from mod import filename as pr
 
