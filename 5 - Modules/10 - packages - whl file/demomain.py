@@ -6,19 +6,19 @@ sys.path.append('./')
 from m import *
 # from m.variables import *
 # namespace
-# __name__ > dont define > "__main__"
+# __name__ > dont define then uses default > "__main__"
 # __name__ = "myscript"
-print("0-10-demo:", strvars.name)
-print("0-10-demo:", type(printme), printme)
+print("demo:", strvars.name)
+print("demo:", type(printme), printme)
 printme.funct(strvars.name)
-print("0-10-demo:", math.sqrt(numvars.num))
-print("0-10-demo:", __name__)
+print("demo:", math.sqrt(numvars.num))
+print("demo:", __name__)
 
 # Script
 if __name__ == "__main__":
-    print("0-10-demo:","Test Main")
+    print("demo:","Test Main")
 if __name__ == "myscript":
-    print("0-10-demo:", "Test myscript")
+    print("demo:", "Test myscript")
 
 
 #   from mod import *

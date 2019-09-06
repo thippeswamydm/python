@@ -1,7 +1,7 @@
 # All common vars and functions
 # Module > Every file is a independent module
 #  __name__
-# Scope
+# Scope private
 __name__ = "printmestatements"
 
 print("printme: __name__",__name__)
