@@ -21,23 +21,24 @@ if __name__ == "myscript":
     print("0-10-demo:", "Test myscript")
 
 
-# from mod import *
-# from mod import name, funct, num
-# Scope for funct not imported
-# from printme import name, num
-# Import of folder using . notation
+#   from mod import *
+#   from mod import name, funct, num
+# Scope - for funct not imported will not be available
+#   from printme import name, num
+# Import of folder path differentiated using . notation
 # Imports of modules/filemodules are explicit
-# from m.printme import *
-# from m.variables import *
 # Alias names of modules
-# from m import printme as pr
-# from m import printme
+#   from m.printme import *
+#   from m.variables import num
+#   from m import printme as pr
+#   from m import printme
+#   from m import printme, variables
+#   from m.variables import *
 # Module name and __name__ are different
 # If __name__ is not defined then it will assign modname to __name__ when importing
 #     name is defined in the imported file __name__ will be different from mod name
 # If __name__ is not defined in the main script file
 #       then it will assign __main__ to main script file
-# from m import printme
-# from m import printme, variables
-# from m.variables import *
-# Name collisions
+
+# Common Name collisions will happen
+# Name overriding depends on when the import statement is used

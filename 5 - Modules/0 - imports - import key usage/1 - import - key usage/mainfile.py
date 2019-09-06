@@ -43,11 +43,11 @@
 
 # WAY ONE
 # import mod.filename as pr
-
+# from mod import filename as pr
 
 # WAY TWO
 # import mod.filename
-
+# from mod import filename
 
 # WAY THREE
 # import sys
@@ -79,11 +79,8 @@
 # Wrong
 # from mod.filename import * as pr
 
-# Wrong
-# from mod import filename
 
-# Wrong
-# from mod import filename as pr
+
 
 
 print('__name__', __name__)
