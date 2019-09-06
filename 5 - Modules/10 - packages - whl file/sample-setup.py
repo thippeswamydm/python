@@ -4,9 +4,12 @@ https://packaging.python.org/guides/distributing-packages-using-setuptools/
 https://github.com/pypa/sampleproject
 """
 
-# https://packaging.python.org/key_projects/#setuptools
+# IMPORTANT: The setup nor pip differentiates packages based on OS
+# DETAILS OF SETUP TOOLS SETUP FUNCTION
+# https://setuptools.readthedocs.io/en/latest/setuptools.html
+
 # https://packaging.python.org/tutorials/packaging-projects/
-# IMPORTANT: Classifiers
+# IMPORTANT: CLASSIFIERS
 # https://pypi.org/classifiers/
 
 # Always prefer setuptools over distutils

@@ -1,12 +1,11 @@
 import setuptools
 
 # IMPORTANT: The setup nor pip differentiates packages based on OS
-# Simplest blog for whl file creation
-# https://dzone.com/articles/executable-package-pip-install
+# DETAILS OF SETUP TOOLS SETUP FUNCTION
+# https://setuptools.readthedocs.io/en/latest/setuptools.html
 
-# https://packaging.python.org/key_projects/#setuptools
 # https://packaging.python.org/tutorials/packaging-projects/
-# IMPORTANT: Classifiers
+# IMPORTANT: CLASSIFIERS
 # https://pypi.org/classifiers/
 
 # METADATA, DESCRIPTION
@@ -24,9 +23,18 @@ import setuptools
 #       We are picking README.md for the long description.
 # packages, Use for other package dependencies.
 # classifiers, Contains all the classifiers of your project.
+# package_dir={'': 'src'}, which provides the source directory
+# test_suite='your.module.tests', Tests for your package
+# use_2to3=True,
+# convert_2to3_doctests=['src/your/module/README.txt'],
+# use_2to3_fixers=['your.fixers'],
+# use_2to3_exclude_fixers=['lib2to3.fixes.fix_import'],
 
+# The tar.gz file is a source archive whereas the .whl file is a built distribution.
+#       Newer pip versions preferentially install built distributions,
+#       but will fall back to source archives if needed.
 # RUN setup.py with below command
-# python3 setup.py bdist_wheel
+# python3 setup.py sdist bdist_wheel
 
 # whl Can be installed using the following
 # python -m pip install dist/testwhl-0.1-py3-none-any.whl
