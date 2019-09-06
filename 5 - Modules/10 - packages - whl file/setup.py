@@ -4,6 +4,7 @@ import setuptools
 # Simplest blog for whl file creation
 # https://dzone.com/articles/executable-package-pip-install
 
+# https://packaging.python.org/key_projects/#setuptools
 # https://packaging.python.org/tutorials/packaging-projects/
 # IMPORTANT: Classifiers
 # https://pypi.org/classifiers/
