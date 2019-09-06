@@ -4,13 +4,16 @@ import setuptools
 # Simplest blog for whl file creation
 # https://dzone.com/articles/executable-package-pip-install
 
+# IMPORTANT: Classifiers
+# https://pypi.org/classifiers/
+
 # METADATA, DESCRIPTION
 
 # name, Name of your package.
 # version, Current version of your pip package.
 # scripts, List of executable files.
 #       It's recommended to keep them the same as your pip package name.
-#       Here we are using demomain.
+#       Here we are using domain.
 # author and author_email, Name and Email Id of the author.
 # description, A short description of the package.
 # long_description, A description of the package.

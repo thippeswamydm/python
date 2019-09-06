@@ -3,7 +3,10 @@ See:
 https://packaging.python.org/guides/distributing-packages-using-setuptools/
 https://github.com/pypa/sampleproject
 """
-# IMPORTANT: The setup nor pip differentiates packages based on OS
+
+# IMPORTANT: Classifiers
+# https://pypi.org/classifiers/
+
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 from os import path
