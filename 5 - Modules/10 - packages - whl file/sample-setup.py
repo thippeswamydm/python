@@ -4,7 +4,6 @@ https://packaging.python.org/guides/distributing-packages-using-setuptools/
 https://github.com/pypa/sampleproject
 """
 
-# IMPORTANT: The setup nor pip differentiates packages based on OS
 # DETAILS OF SETUP TOOLS SETUP FUNCTION
 # https://setuptools.readthedocs.io/en/latest/setuptools.html
 
