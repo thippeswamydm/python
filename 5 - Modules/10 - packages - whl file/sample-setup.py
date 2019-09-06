@@ -4,6 +4,7 @@ https://packaging.python.org/guides/distributing-packages-using-setuptools/
 https://github.com/pypa/sampleproject
 """
 
+# https://packaging.python.org/tutorials/packaging-projects/
 # IMPORTANT: Classifiers
 # https://pypi.org/classifiers/
 
