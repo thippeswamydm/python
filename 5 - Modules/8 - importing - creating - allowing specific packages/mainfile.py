@@ -7,6 +7,7 @@
 from foo import *
 
 def main():
+    inputs.inputprinter()
     print.printer()
     print.inputprinter()
 

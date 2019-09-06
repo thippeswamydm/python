@@ -2,6 +2,7 @@
 # 'continue' key skips execution of block below it and continues to next
 #       logical step after the continue statement
 # 'break' key will break out of the loop completely; without further iteration
+#  PENDING: continue usage with functions to exit program
 
 for i in range(0, 6, 1):
     if i == 3:

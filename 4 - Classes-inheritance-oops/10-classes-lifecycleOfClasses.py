@@ -29,3 +29,5 @@ class LifeCycleClass:
 # Creating the instance of class LifeCycleClass
 obj = LifeCycleClass('Testing init')
 # All the functions should be triggered by the end of exit of the process
+# print(obj)
+

@@ -8,7 +8,7 @@ class C:
     # Defining __init__
     def __init__(self):
         # Defining a property for _x
-        self._x = None
+        self._x = "Test"
 
     # Defining a getter for _x
     def getx(self):
@@ -27,3 +27,13 @@ class C:
 # c.x will invoke the getter, 
 # c.x = value will invoke the setter and 
 # del c.x the deleter
+#
+# def setprop(self, prop):
+#     self._prop = prop
+# def getprop(self):
+#     return self._prop
+
+obj = C()
+print(obj.x)
+obj.x = 10
+print(obj.x)

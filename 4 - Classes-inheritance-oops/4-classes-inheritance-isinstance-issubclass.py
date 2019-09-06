@@ -18,6 +18,10 @@ class DerivedChild(Parent):
     def negateVal(self):
         self.val = -self.val
 
+class DerivedChildtwo(DerivedChild):
+    def negateVal(self):
+        self.val = -self.val
+
 # Instantiate the child class - DerivedChild
 obj1 = DerivedChild(12)
 obj1.negateVal()
@@ -29,4 +33,4 @@ obj1.printVal()
 print(isinstance(obj1, Parent))
 
 # issubclass function below checks if DerivedFoo is an inherited class of Foo
-print(issubclass(DerivedChild, Parent))
+print(issubclass(DerivedChildtwo, Parent))

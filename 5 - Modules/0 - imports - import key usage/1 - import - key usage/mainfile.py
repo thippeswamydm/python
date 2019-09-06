@@ -42,17 +42,14 @@
 # DIFFERENT FORMS OF USAGES
 
 # WAY ONE
-
 # import mod.filename as pr
 
 
 # WAY TWO
-
 # import mod.filename
 
 
 # WAY THREE
-
 # import sys
 #
 # sys.path.append('./mod/')
@@ -60,7 +57,6 @@
 
 
 # WAY FOUR
-
 # import sys
 #
 # sys.path.append('./')
@@ -68,7 +64,6 @@
 
 
 # WAY FIVE
-
 # all obj will be available in the global space
 # including __name__. Hence, overridden
 

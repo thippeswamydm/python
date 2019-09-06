@@ -27,7 +27,7 @@ class WheelType:
     def __init__(self, val):
         self.__type = val
 
-    # Defining the __init_subclass__ taking staically defined argument, keyword arguments
+    # Defining the __init_subclass__ taking statistically defined argument, keyword arguments
     def __init_subclass__(self, wType, **kwargs):
         super().__init_subclass__(**kwargs)
         self.__type = wType
@@ -79,10 +79,11 @@ class Vehicle(EngineType, WheelType, eType="Test", wType="Tester"):
     # Defining the __init__ method
     def __init__(self, ppart, eType, wType):
         # Instantiate parent - does first parent class instantiation
+        # Second parent class also has to do super to init second parent
         # Or use specific Base call instantiators as below
         # super()
 
-        # When you have one/first Parent or Base class
+        # When you have one Parent or Base class
         # super().__init__(eType)
 
         # When you have multiple Base or Parent class, pass arguments

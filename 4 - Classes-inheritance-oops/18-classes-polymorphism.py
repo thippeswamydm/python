@@ -108,7 +108,6 @@ class Jeep(CommonVehicleAttributes):
     def set_bonet_type(self, val):
         self.__bonet = val
 
-
 # Now instantiate the forms or morphs of CommonVehicleAttributes
 jeepVehicle = Jeep("JeepRound", "Sturdy", {'ignition': 6, 'capacity': 20, 'bhp': 85}, "Multiple", "Aerodynamic")
 print(jeepVehicle.__dict__)

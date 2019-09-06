@@ -6,6 +6,10 @@
 # The whole string value has to be reassigned to the variable
 
 name = "I am a string which is a list of characters joined together"
+
+# Print string
 print(name)
+
+# Access string character using index of the character
 print("First character", name[0])
 print("Last character", name[len(name)-1])
