@@ -1,5 +1,6 @@
 import setuptools
 
+# IMPORTANT: The setup nor pip differentiates packages based on OS
 # Simplest blog for whl file creation
 # https://dzone.com/articles/executable-package-pip-install
 
