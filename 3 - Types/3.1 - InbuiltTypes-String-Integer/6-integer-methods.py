@@ -18,3 +18,4 @@ float_val = float(1.2345)
 # Some Methods available in float (float) class object
 print('float_val.conjugate()', float_val.conjugate())
 print('float_val.is_integer()', float_val.is_integer())
+

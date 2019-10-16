@@ -11,7 +11,7 @@ class CommonVehicleAttributes:
     # Describe type of seatc specific to vehicle
     __Seat = None
 
-    def __init__(wt, ch, et, st):
+    def __init__(self, wt, ch, et, st):
         pass
 
     # Simple getter for wheel type
@@ -40,11 +40,11 @@ class CommonVehicleAttributes:
 
     # Simple getter for seat type
     def get_seat_type(self):
-        return self.__seat
+        return self.__Seat
 
     # Simple setter for seat type
     def set_seat_type(self, val):
-        self.seat = val
+        self.Seat = val
 
 
 class Bike(CommonVehicleAttributes):

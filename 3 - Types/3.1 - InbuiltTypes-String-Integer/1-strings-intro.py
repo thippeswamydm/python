@@ -9,6 +9,7 @@ name = "I am a string which is a list of characters joined together"
 
 # Print string
 print(name)
+print(type(name))
 
 # Access string character using index of the character
 print("First character", name[0])

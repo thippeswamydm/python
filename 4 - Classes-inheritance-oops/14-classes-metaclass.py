@@ -16,6 +16,7 @@
 
 # Describes Meta and __call__ magic methods
 # https://blog.ionelmc.ro/2015/02/09/understanding-python-metaclasses/
+# https://stackoverflow.com/questions/100003/what-are-metaclasses-in-python
 
 # CREATING CLASS DIRECTLY USING TYPE
 # >>> MyClass = type('MyClass', (), {})

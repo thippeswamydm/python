@@ -1,8 +1,8 @@
 # Describes the usage of `with` statement
 
 # USAGE
-# with obj as aliasname:
-#   executionstatement
+# with obj as aliasObjName:
+#   executionStatement
 
 # open is a function that opens a file using default utf8 encoding
 with open("exercises.txt", "r") as fh:
