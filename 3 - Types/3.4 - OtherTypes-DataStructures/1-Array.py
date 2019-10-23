@@ -8,7 +8,7 @@ from array import *
 # import array as array
 
 # arrame = array(typecode, [Initializers])
-arr = array('L',[100000000,2,3,4])
+arr = array('L',[100000,2,3,4])
 print(arr)
 
 # ‘b’ -> Represents signed integer of size 1 byte
